@@ -1,0 +1,35 @@
+{
+  "name": "argo-checkout-template",
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=10.16.0"
+  },
+  "repository": "https://github.com/Shopify/argo-checkout-template.git",
+  "author": "Shopify <app-extensions@shopify.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@shopify/argo-run": "^0.3.0",
+    "@types/prettier": "^2.1.5",
+    "@typescript-eslint/eslint-plugin": "^4.15.0",
+    "@typescript-eslint/parser": "^4.15.0",
+    "eslint": "^7.19.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "eslint-plugin-react": "^7.22.0",
+    "prettier": "^2.1.2",
+    "typescript": "^4.1.0"
+  },
+  "scripts": {
+    "build": "argo-run build",
+    "server": "yarn start",
+    "start": "argo-run serve --port 39351",
+    "lint": "eslint 'src/**'",
+    "type-check": "tsc --pretty"
+  },
+  "dependencies": {
+    "@shopify/argo-checkout": "^0.9.0",
+    "@shopify/argo-checkout-react": "^0.9.0",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.2"
+  }
+}
